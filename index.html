@@ -1,0 +1,34 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced JSON Data API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Worksy</h1>
+    <p>Filter data by role or view all:</p>
+    <select id="roleFilter">
+      <option value="all">All Roles</option>
+      <option value="Engineer">Engineer</option>
+      <option value="Designer">Designer</option>
+      <option value="Manager">Manager</option>
+    </select>
+    <button id="fetchDataBtn">Fetch Data</button>
+    <div id="dataContainer" class="grid-container"></div>
+  </div>
+
+  <!-- Modal for user details -->
+  <div id="userModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>User Details</h2>
+      <div id="modalData"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
